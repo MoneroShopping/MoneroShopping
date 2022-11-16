@@ -1,0 +1,329 @@
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <base target="_blank">
+  <meta name="description" content="Spend Monero everywhere!" />
+  <title>🟠 SpendMonero.Online 🟠</title> 
+  <meta property="og:image" content="NETWORK.png"/>
+  <meta property="og:title" content="🟩 Open Shared Network 🟩"/>
+  <meta property="og:site_name" content="OpenSharedNetwork.com"/>
+  <meta property="og:description" content="The next Internet" />
+  <meta name="viewport" content="width=device-width">
+
+  <script src="https://www.blockonomics.co/js/pay_button.js"></script>
+  
+  <style type="text/css">
+    
+ :root {
+
+  --cover-image: url("https://cdn-icons-png.flaticon.com/512/1970/1970893.png");
+  --image1: url("NETWORK.gif");
+  --image2: url("https://cdn.cloudflare.steamstatic.com/steam/apps/265930/header.jpg?t=1596094271");
+
+
+  --bg: #121212;
+  --color1: #B1B1B1;
+  --color2: #FA6800; 
+  --color3: #1A5468; 
+  --color4: #00073A;
+  --font1: 'Fredoka One', sans-serif;
+  --font2: 'Courier New', monospace;
+}
+
+.cover-image {
+  content: var(--cover-image);
+}
+.image1 {
+  content: var(--image1);
+}
+.image2 {
+  content: var(--image2);
+}
+.image3 {
+  content: var(--image3);
+}
+
+body
+{
+   	background-color: var(--bg);
+  	font-size: 18px;
+        line-height: 1.11;
+   	font-family: var(--font2); 
+   	color: var(--color1); 
+    	text-align: left;
+	padding-left:10px;
+	padding-right:10px;
+        margin: auto;
+        margin-top: 0px;
+        width: 25em;
+  	text-shadow: 1px 1px 0px  var(--color4);
+}
+
+::selection {
+  background: var(--color4); 
+  text-shadow: none;
+}
+
+#blockoPayModal.modal .modal-content {
+ background: var(--bg);
+ color: var(--color1);
+}
+
+#blockoPayModal.modal .modal-header h4 {
+ color: var(--color1);
+}
+
+#blockoPayModal.modal .modal-header .modal-desc {
+ color: var(--color1);
+}
+
+#blockoPayModal.modal .modal-body hr {
+display: none;
+}
+
+#blocko-merchant-ratings {
+ display: none;
+}
+
+#blockoPayModal.modal .modal-footer {
+ display: none;
+}
+
+#blockoPayModal.modal .btn-warning {
+ color: var(--color2);
+ background-color: var(--bg);
+ border-color: var(--color2);
+}
+
+#blockoPayModal.modal .btn-warning:hover {
+ color: var(--color2);
+ background-color: var(--color2);
+ border-color: var(--color2);
+}
+
+#blockoPayModal.modal .btn-warning:active {
+ color: var(--color2);
+ background-color: var(--color2);
+ border-color: var(--color2);
+}
+
+#blockoPayModal.modal .btn-warning:focus {
+ color: var(--color2);
+ background-color: var(--color2);
+ border-color: var(--color2);
+}
+
+
+    h1 {
+      font-size: 250%;
+      font-weight: bold; color: var(--color2); 
+      line-height: 35%;
+    }
+
+    pre {
+	padding-left:0%;
+	padding-right:0%;
+    }
+
+    a {
+      font-size: 17px;
+    }
+
+    a:link {font-weight: bold; color: var(--color2); text-decoration:underline;}
+    a:visited {color: var(--color2); text-decoration:none;}
+    a:hover {text-shadow: 0px 0px 0px  var(--color4);text-decoration:none; color: var(--bg); background: var(--color2);}
+
+
+    input {
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      display: block;
+      width: 100%;
+      font-size: 25px;
+      color: var(--color1); background: var(--bg);
+      border: solid 2px var(--color2);
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    textarea {
+      text-align: left;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      display: block;
+      width: 100%;
+      height: 200px;
+      font-size: 15px;
+      color: var(--color1); 
+      background: var(--bg);
+      border: solid 2px var(--color2);
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    textarea:focus,input:focus {
+      border: solid 2px var(--color2);
+      outline: solid 5px var(--color2);
+    }
+
+    button {
+      font-weight: bold;
+      text-align: center;
+      margin-top: 0px;
+      display: block;
+      width: 100%;
+      font-size: 25px;
+      color: var(--bg); background: var(--color2);
+      border: solid 2px var(--color2);
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    button:link {font-weight: bold; color: var(--color2); text-decoration:underline;}
+    button:visited {color: var(--color2); text-decoration:none;}
+    button:hover {outline: solid 5px var(--color2);text-shadow: 0px 0px 0px  var(--color4);text-decoration:none; cursor: pointer; border: solid 2px var(--color2); color: var(--color2); background: var(--bg);}
+
+    span {
+      font-weight: bold;
+      font-size: 25px;
+      color: var(--color2);
+    }
+
+    img {
+     /* image-rendering: pixelated;*/
+    }
+
+.row {
+  margin: 0px 0px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 10px;
+}
+
+/* Create equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 45%;
+
+  
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 0px;
+}
+
+
+@media screen and (max-width: 555px) {
+  .column {
+    width: 100%;
+  }
+
+body {
+    font-size: 3.0vw;
+        width: 90%;
+  }
+
+    a {
+      font-size: 3.0vw;
+    }
+}
+
+  </style>
+
+
+</head>
+
+<body>
+
+<div>
+<center>
+<h1>Monero.Shopping</h1>
+Spend Monero anywhere on the internet!
+<br>
+<img width="50%" src="https://web.getmonero.org/press-kit/symbols/monero-symbol-480.png" alt="Monero-Logo">
+<br>
+<br>
+<span>1.Find Products</span>
+<div style="padding: 10px; border: solid 2px var(--color2); border-radius: 5px;">
+<img width="17%" src="https://img.icons8.com/color/512/amazon.png" alt="Monero-Logo">
+<img width="17%" src="https://img.icons8.com/color/512/ebay.png" alt="Monero-Logo">
+<img width="17%" src="https://img.icons8.com/color/512/walmart.png" alt="Monero-Logo">
+<img width="17%" src="https://www.svgrepo.com/show/331497/newegg.svg" alt="Monero-Logo">
+<img width="17%" src="https://img.icons8.com/color/512/steam.png" alt="Monero-Logo">
+<img width="17%" src="https://www.svgrepo.com/show/303267/etsy-logo.svg" alt="Monero-Logo">
+<img width="17%" src="https://www.svgrepo.com/show/25162/apple.svg" alt="Monero-Logo">
+<img width="17%" src="https://img.icons8.com/color/512/aliexpress.png" alt="Monero-Logo">
+<img width="17%" src="https://img.icons8.com/fluency/512/zalando.png" alt="Monero-Logo">
+<img width="17%" src="https://img.icons8.com/fluency/512/facebook.png" alt="Monero-Logo">
+<br>
+<br>
+and any other public marketplace!
+<br>
+</div>
+
+<form action="https://api.staticforms.xyz/submit" method="post" id="staticform">
+        <!-- Replace with your StaticForms accessKey -->
+        <input type="hidden" name="accessKey" value="c9c319b0-51d5-4ae2-904f-b5df8f3ecedc">
+        <input type="hidden" name="subject" value="Monero.Shopping">
+        <!-- Replace with the url you want to redirect to -->
+        <input type="hidden" name="redirectTo" value="https://monero.shopping/thankyou">
+        <!-- If we receive data in this field submission will be ignored -->
+        <input type="text" name="honeypot" style="display: none;"> <!-- Optional -->
+    
+<br>
+<span class="label">2.Paste Product-URLs</span>
+        <div class="field">
+          <div class="control">
+            <textarea class="textarea" name="message" 
+placeholder="https://www.amazon.com/yourproduct
+https://www.ebay.com/yourproduct
+https://www.wish.com/yourproduct
+..."
+required></textarea>
+          </div>
+        </div>
+
+
+<br>
+<span class="label">3.Provide Email</span>
+
+        <div class="field">
+
+          <div class="control">
+            <input class="input" type="email" name="email" placeholder="your@email.com" required>
+          </div>
+
+<br>
+        <button class="button is-primary" type="Submit">Generate Monero Invoice</button>
+
+</form>
+</center>
+<br>
+<br>
+Service fee: <span>50$+5%</span> of the total order amount<br>
+<br>
+Please be aware:<br>
+-Order process may take up to 24h<br>
+-No Returns<br>
+<br>
+<br>
+<center>
+<a href="https://www.getmonero.org/">Get Monero</a>
+<a href="https://github.com/MoneroShopping">Contribute</a>
+<a href="mailto:info@monero.shopping">Contact</a>
+</center>
+<br>
+<br>
+</div>
+
+
+</body>
