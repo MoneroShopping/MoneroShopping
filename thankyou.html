@@ -5,26 +5,26 @@
   <base target="_blank">
   <meta name="description" content="Spend Monero everywhere!" />
   <title>🟠 SpendMonero.Online 🟠</title> 
-  <meta property="og:image" content="NETWORK.png"/>
-  <meta property="og:title" content="🟩 Open Shared Network 🟩"/>
-  <meta property="og:site_name" content="OpenSharedNetwork.com"/>
-  <meta property="og:description" content="The next Internet" />
+  <meta property="og:image" content="monero.png"/>
+  <meta property="og:title" content="🟠 SpendMonero.Online 🟠"/>
+  <meta property="og:site_name" content="Monero.Shopping"/>
+  <meta property="og:description" content="Spend Monero everywhere" />
   <meta name="viewport" content="width=device-width">
 
   <style type="text/css">
     
  :root {
 
-  --cover-image: url("https://cdn-icons-png.flaticon.com/512/1970/1970893.png");
-  --image1: url("NETWORK.gif");
-  --image2: url("https://cdn.cloudflare.steamstatic.com/steam/apps/265930/header.jpg?t=1596094271");
+  --cover-image: url("");
+  --image1: url("");
+  --image2: url("");
 
 
-  --bg: #121212;
-  --color1: #B1B1B1;
+  --bg: #1d1d2c;
+  --color1: #B8BFDC;
   --color2: #FA6800; 
   --color3: #1A5468; 
-  --color4: #00073A;
+  --color4: #121212;
   --font1: 'Fredoka One', sans-serif;
   --font2: 'Courier New', monospace;
 }
@@ -55,69 +55,9 @@ body
         margin: auto;
         margin-top: 0px;
         width: 25em;
-  	text-shadow: 1px 1px 0px  var(--color4);
+  	text-shadow: 2px 2px 0px  var(--color4);
 }
 
-::selection {
-  background: var(--color4); 
-  text-shadow: none;
-}
-
-#blockoPayModal.modal .modal-content {
- background: var(--bg);
- color: var(--color1);
-}
-
-#blockoPayModal.modal .modal-header h4 {
- color: var(--color1);
-}
-
-#blockoPayModal.modal .modal-header .modal-desc {
- color: var(--color1);
-}
-
-#blockoPayModal.modal .modal-body hr {
-display: none;
-}
-
-#blocko-merchant-ratings {
- display: none;
-}
-
-#blockoPayModal.modal .modal-footer {
- display: none;
-}
-
-#blockoPayModal.modal .btn-warning {
- color: var(--color2);
- background-color: var(--bg);
- border-color: var(--color2);
-}
-
-#blockoPayModal.modal .btn-warning:hover {
- color: var(--color2);
- background-color: var(--color2);
- border-color: var(--color2);
-}
-
-#blockoPayModal.modal .btn-warning:active {
- color: var(--color2);
- background-color: var(--color2);
- border-color: var(--color2);
-}
-
-#blockoPayModal.modal .btn-warning:focus {
- color: var(--color2);
- background-color: var(--color2);
- border-color: var(--color2);
-}
-
-
-    h1 {
-      font-size: 250%;
-      font-weight: bold; color: var(--color2); 
-      line-height: 100%;
-    }
 
     pre {
 	padding-left:0%;
@@ -134,8 +74,9 @@ display: none;
 
 
     input {
+      text-align: center;
       margin-top: 5px;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
       display: block;
       width: 100%;
       font-size: 25px;
@@ -146,13 +87,15 @@ display: none;
     }
 
     textarea {
+      text-align: left;
       margin-top: 5px;
-      margin-bottom: 10px;
+      margin-bottom: 0px;
       display: block;
       width: 100%;
       height: 200px;
       font-size: 15px;
-      color: var(--color1); background: var(--bg);
+      color: var(--color1); 
+      background: var(--bg);
       border: solid 2px var(--color2);
       border-radius: 5px;
       padding: 10px;
@@ -163,9 +106,15 @@ display: none;
       outline: solid 5px var(--color2);
     }
 
+    textarea:hover,input:hover {
+      border: solid 2px var(--color2);
+      outline: solid 5px var(--color2);
+    }
+
     button {
-      text-align: left;
-      margin-top: 20px;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 0px;
       display: block;
       width: 100%;
       font-size: 25px;
@@ -177,15 +126,17 @@ display: none;
 
     button:link {font-weight: bold; color: var(--color2); text-decoration:underline;}
     button:visited {color: var(--color2); text-decoration:none;}
-    button:hover {outline: solid 5px var(--color2);text-shadow: 0px 0px 0px  var(--color4);text-decoration:none; cursor: pointer; border: solid 2px var(--color2); color: var(--color2); background: var(--bg);}
+    button:hover { outline: solid 5px var(--color2);text-shadow: 0px 0px 0px  var(--color4);text-decoration:none; cursor: pointer; border: solid 2px var(--color2); color: var(--color2); background: var(--bg);}
 
     span {
+      font-weight: bold;
       font-size: 25px;
-      color: var(--color1);
+      color: var(--color2);
     }
 
     img {
      /* image-rendering: pixelated;*/
+    filter: drop-shadow(2px 2px 0px  var(--color4)); 
     }
 
 .row {
@@ -222,7 +173,7 @@ display: none;
 
 body {
     font-size: 3.0vw;
-        width: 100%;
+        width: 90%;
   }
 
     a {
@@ -245,7 +196,9 @@ body {
 <center>
 <img width="50%" src="https://web.getmonero.org/press-kit/symbols/monero-symbol-480.png" alt="Monero-Logo">
 <br>
-<h1>Thank you for your order!</h1>
+<span style="font-size: 250%;">Thank you for your order!</span>
+<br>
+<br>
 You will receive a Monero Invoice within 24 Hours.
 <br>
 <br>
